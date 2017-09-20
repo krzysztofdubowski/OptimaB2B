@@ -60,7 +60,38 @@ class DefaultController extends Controller
             'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
         ]);
     }
+      /**
+     * @Route("/faktury", name="faktury")
+     */
+    public function FakturyAction(Request $request)
+    {
+        // replace this example code with whatever you need
+        return $this->render('default/faktury.html.twig', [
+            'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
+        ]);
+    }
     
+      /**
+     * @Route("/towary", name="towary")
+     */
+    public function TowaryAction(Request $request)
+    {
+        // replace this example code with whatever you need
+        return $this->render('default/towary.html.twig', [
+            'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
+        ]);
+    }
+    
+     /**
+     * @Route("/towar", name="towar")
+     */
+    public function TowarAction(Request $request)
+    {
+        // replace this example code with whatever you need
+        return $this->render('default/towar.html.twig', [
+            'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
+        ]);
+    }
     
     
 }
