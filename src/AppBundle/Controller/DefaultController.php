@@ -25,9 +25,8 @@ class DefaultController extends Controller
     public function zamowieniaAction(Request $request)
     {
         // replace this example code with whatever you need
-        return $this->render('default/zamowienia.html.twig', [
-            'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
-        ]);
+        return $this->render('default/zamowienia.html.twig')
+        ;
     }
     
      /**
@@ -51,6 +50,17 @@ class DefaultController extends Controller
             'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
         ]);
     }
+     /**
+     * @Route("/dokument", name="dokument")
+     */
+    public function DokumentAction(Request $request)
+    {
+        // replace this example code with whatever you need
+        return $this->render('default/Dokument.html.twig', [
+            'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
+        ]);
+    }
+    
     
     
 }

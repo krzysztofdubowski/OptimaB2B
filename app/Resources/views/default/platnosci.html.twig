@@ -1,4 +1,16 @@
 {% extends 'starter.html.twig' %}
+{% block PageHeader %}
+    <section class="content-header">
+      <h1>
+        Płatności
+        <small>lista nierozliczonych płatności</small>
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="/"><i class="fa fa-dashboard"></i>Home</a></li>
+        <li class="active">Płatności</li>
+      </ol>
+    </section>
+        {% endblock %}
 {% block MainContent %}
     <div class="row">
         <div class="col-xs-12">
@@ -29,7 +41,7 @@
               </tr>
               {% for i in 1..10 %}
                 <tr>
-                  <td><a href="Dokument">FS/123/01/2017</a></td>
+                  <td><a href="/dokument">FS/123/01/2017</a></td>
                   <td>Monika Rudkowska</td>
                   <td>11-7-2014</td>
                   <td>18-7-2014</td>

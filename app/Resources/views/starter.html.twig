@@ -265,6 +265,7 @@ desired effect
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
+    {% block PageHeader %}
     <section class="content-header">
       <h1>
         Page Header
@@ -275,6 +276,7 @@ desired effect
         <li class="active">Here</li>
       </ol>
     </section>
+        {% endblock %}
 
     <!-- Main content -->
     <section class="content container-fluid">
