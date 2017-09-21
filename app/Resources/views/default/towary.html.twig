@@ -44,24 +44,30 @@
               </tr>
               {% for i in 1..10 %}
                 <tr>
-                  <td><a href="/towar"> 123313-{{i}}<i class="fa fa-eye" aria-hidden="true"></i></a></td>
+                  <td><a href="/towar"> 123313-{{i}}</a></td>
                   <td>Płytka ścienna blue</td>
                   <td>123{{i}}</td>
                   <td>m2</td>
                   <td>12{{i}}34 zł</td>
                   <td><span class="label label-info">Promo</span></td>   
-                  <td><a href="#" class="btn btn-sm btn-success"><span class="glyphicon glyphicon-plus"></span> Zamówienie</a></td>
+                    <td>
+                        <a href="/towar" class="btn btn-info btn-xs"><span class="glyphicon glyphicon-zoom-in"></span> Pokaż</a>
+                       <a href="/towar" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-plus"></span>Dodaj do zamówienia</a>
+                   </td>
                 </tr>
                 {% endfor %}
                 {% for i in 1..3 %}
                   <tr>
-                  <td><a href="/towar"> 123313-{{i}}<i class="fa fa-eye" aria-hidden="true"></i></a></td>
+                  <td><a href="/towar"> 123313-{{i}}</i></a></td>
                   <td>Płytka ścienna blue</td>
                   <td>123{{i}}</td>
                   <td>m2</td>
                   <td>12{{i}}34 zł</td>
                   <td><span class="label label-warning">Wyprzedaż</span></td>    
-                   <td><a href="#" class="btn btn-sm btn-success"><span class="glyphicon glyphicon-plus"></span> Zamówienie</a></td>
+                   <td>
+                        <a href="/towar" class="btn btn-info btn-xs"><span class="glyphicon glyphicon-zoom-in"></span> Pokaż</a>
+                       <a href="/towar" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-plus"></span>Dodaj do zamówienia</a>
+                   </td>
                 </tr>
                 {% endfor %}
                
