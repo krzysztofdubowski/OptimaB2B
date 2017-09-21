@@ -38,7 +38,7 @@ twig:
     debug: '%kernel.debug%'
     strict_variables: '%kernel.debug%'
     globals:
-     admin_skin: skin-blue
+    cache: False
 # Doctrine Configuration
 doctrine:
     dbal:
