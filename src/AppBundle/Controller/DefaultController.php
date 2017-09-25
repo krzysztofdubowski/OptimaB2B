@@ -5,6 +5,7 @@ namespace AppBundle\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use AppBundle\Entity\Dokument;
 
 class DefaultController extends Controller
 {
@@ -54,11 +55,12 @@ class DefaultController extends Controller
      * @Route("/dokument", name="dokument")
      */
     public function DokumentAction(Request $request)
-    {
+    {   $doc = new Dokument();
+        $doc->setTrNTypDokumentu(340);
         // replace this example code with whatever you need
-        return $this->render('default/dokument.html.twig', [
-            'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
-        ]);
+        return $this->render('default/dokument.html.twig', array(
+            'Dokument',$doc
+        ));
     }
       /**
      * @Route("/faktury", name="faktury")
