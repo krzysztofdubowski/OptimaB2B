@@ -2,12 +2,12 @@
  {% block PageHeader %}
     <section class="content-header">
       <h1>
-        Faktura numer 123313323467
-        <small>z dnia 2012.12.12</small>
+        Faktura numer {{Dokument.TrNNumerPelny}}
+        <small>z dnia {{Dokument.TrNDataDok}}</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="/"><i class="fa fa-dashboard"></i>Home</a></li>
-        <li class="active">Dokument: Faktura nr 123313</li>
+        <li class="active">Dokument:  {{Dokument.TrNNumerPelny}}</li>
       </ol>
     </section>
         {% endblock %}
@@ -18,7 +18,7 @@
         <div class="col-xs-12">
           <h2 class="page-header">
             <i class="fa fa-globe"></i>Biuro Handlowe NETTO PLUS Sp. z o.o. Sp. k.
-            <small class="pull-right">Data: 2/10/2014</small>
+            <small class="pull-right">Data: {{Dokument.TrNDataDok}}</small>
           </h2>
         </div>
         <!-- /.col -->
@@ -48,7 +48,7 @@
         </div>
         <!-- /.col -->
         <div class="col-sm-4 invoice-col">
-          <b>Faktura #007612</b><br>
+          <b>Faktura {{Dokument.TrNNumerPelny}}</b><br>
           <br>
           <b>Zamówienie nr:</b>RO/12/03/2017<br>
           <b>Termin Płatności:</b> 2/22/2014<br>

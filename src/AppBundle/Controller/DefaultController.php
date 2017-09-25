@@ -57,9 +57,11 @@ class DefaultController extends Controller
     public function DokumentAction(Request $request)
     {   $doc = new Dokument();
         $doc->setTrNTypDokumentu(340);
-        // replace this example code with whatever you need
+        $doc->setTrNNumerPelny('FS/12/12');
+        $doc->setTrNDataDok('2017-01-01');
+        
         return $this->render('default/dokument.html.twig', array(
-            'Dokument',$doc
+            'Dokument'=>$doc
         ));
     }
       /**
