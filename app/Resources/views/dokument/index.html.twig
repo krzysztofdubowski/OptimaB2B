@@ -1,0 +1,55 @@
+{% extends 'starter.html.twig' %}
+
+ {% block MainContent %}
+    <h1>Dokuments list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Trntrnid</th>
+                <th>Trntypdokumentu</th>
+                <th>Trnnumerpelny</th>
+                <th>Trnrazemnetto</th>
+                <th>Trnrazemvat</th>
+                <th>Trnrazembrutto</th>
+                <th>Trndatadok</th>
+                <th>Trnpodid</th>
+                <th>Trntermin</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for dokument in dokuments %}
+            <tr>
+                <td><a href="{{ path('doc_show', { 'id': dokument.id }) }}">{{ dokument.id }}</a></td>
+                <td>{{ dokument.trNTrNID }}</td>
+                <td>{{ dokument.trNTypDokumentu }}</td>
+                <td>{{ dokument.trNNumerPelny }}</td>
+                <td>{{ dokument.trNRazemNetto }}</td>
+                <td>{{ dokument.trNRazemVAT }}</td>
+                <td>{{ dokument.trNRazemBrutto }}</td>
+                <td>{% if dokument.trNDataDok %}{{ dokument.trNDataDok|date('Y-m-d') }}{% endif %}</td>
+                <td>{{ dokument.trNPodID }}</td>
+                <td>{% if dokument.trNTermin %}{{ dokument.trNTermin|date('Y-m-d') }}{% endif %}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('doc_show', { 'id': dokument.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('doc_edit', { 'id': dokument.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('doc_new') }}">Create a new dokument</a>
+        </li>
+    </ul>
+{% endblock %}
