@@ -1,4 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/Krzysztof/Documents/GitHub/OptimaB2B/app/Resources/views/SearchForm.html.twig</file>
+            <file>file:/C:/Users/Krzysztof/Documents/GitHub/OptimaB2B/app/Resources/views/dokument/new.html.twig</file>
+            <file>file:/C:/Users/Krzysztof/Documents/GitHub/OptimaB2B/app/Resources/views/default/dokument.html.twig</file>
+            <file>file:/C:/Users/Krzysztof/Documents/GitHub/OptimaB2B/app/Resources/views/dokument/index.html.twig</file>
+            <file>file:/C:/Users/Krzysztof/Documents/GitHub/OptimaB2B/app/Resources/views/default/towary.html.twig</file>
+            <file>file:/C:/Users/Krzysztof/Documents/GitHub/OptimaB2B/app/Resources/views/dokument/edit.html.twig</file>
+            <file>file:/C:/Users/Krzysztof/Documents/GitHub/OptimaB2B/app/Resources/views/SidebarMenu.html.twig</file>
+            <file>file:/C:/Users/Krzysztof/Documents/GitHub/OptimaB2B/src/AppBundle/Controller/DokumentController.php</file>
+            <file>file:/C:/Users/Krzysztof/Documents/GitHub/OptimaB2B/app/Resources/views/default/towar.html.twig</file>
+            <file>file:/C:/Users/Krzysztof/Documents/GitHub/OptimaB2B/app/Resources/views/default/faktury.html.twig</file>
+            <file>file:/C:/Users/Krzysztof/Documents/GitHub/OptimaB2B/src/AppBundle/Controller/DefaultController.php</file>
+            <file>file:/C:/Users/Krzysztof/Documents/GitHub/OptimaB2B/app/Resources/views/starter.html.twig</file>
+            <file>file:/C:/Users/Krzysztof/Documents/GitHub/OptimaB2B/src/AppBundle/Entity/Dokument.php</file>
+            <file>file:/C:/Users/Krzysztof/Documents/GitHub/OptimaB2B/app/Resources/views/dokument/show.html.twig</file>
+        </group>
+    </open-files>
 </project-private>

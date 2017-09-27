@@ -1,6 +1,32 @@
 {% extends 'starter.html.twig' %}
 
  {% block MainContent %}
+     
+      <div class="box-body table-responsive no-padding">
+              <table class="table table-hover">
+                <tbody><tr>
+                  <th>Dokument</th>
+                  <th>Sprzedawca</th>
+                  <th>Data dokumentu</th>
+                  <th>Data płatności</th>
+                  <th>Kwota</th>
+                  <th>Status Realizacji</th>
+                  <th>Akcja</th>
+              </tr>
+              {% for i in 1..10 %}
+                <tr>
+                  <td><a href="/dokument">RO/{{i}}/01/2017</a></td>
+                  <td>Monika Rudkowska</td>
+                  <td>11-7-2014</td>
+                  <td>18-7-2014</td>
+                  <td>1234 zł</td>
+                  <td><span class="label label-success">Zrealizowane</span></td> 
+                   <td>
+                      <a href="/dokument" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-zoom-in"></span> Pokaż</a>
+                  <a href="/dokument" class="btn btn-info btn-xs"><span class="glyphicon glyphicon-print"></span> Drukuj</a>
+                  </td>
+                </tr>
+                {% endfor %}
     <h1>Dokuments list</h1>
 
     <table>
@@ -21,6 +47,19 @@
         </thead>
         <tbody>
         {% for dokument in dokuments %}
+        
+             <tr>
+                  <td>{{ dokument.trNNumerPelny }}</td>
+                  <td>Monika Rudkowska</td>
+                  <td>11-7-2014</td>
+                  <td>18-7-2014</td>
+                  <td>1234 zł</td>
+                  <td><span class="label label-success">Zrealizowane</span></td> 
+                   <td>
+                      <a href="/dokument" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-zoom-in"></span> Pokaż</a>
+                  <a href="/dokument" class="btn btn-info btn-xs"><span class="glyphicon glyphicon-print"></span> Drukuj</a>
+                  </td>
+                </tr>
             <tr>
                 <td><a href="{{ path('doc_show', { 'id': dokument.id }) }}">{{ dokument.id }}</a></td>
                 <td>{{ dokument.trNTrNID }}</td>
